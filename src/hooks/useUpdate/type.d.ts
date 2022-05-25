@@ -1,1 +1,1 @@
-export type IuseUpdate = () => {updateComponent:() => void}
+export type IuseUpdate = () => {forceUpdate:() => void}

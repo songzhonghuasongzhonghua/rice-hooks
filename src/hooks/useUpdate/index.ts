@@ -4,9 +4,9 @@ import { IuseUpdate } from "./type";
 const useUpdate:IuseUpdate =() => {
     const [updateState,setUpdateState] = useState(0)
     const update =() => {
-        setUpdateState(Math.random)
+        setUpdateState(count => count + 1)
     }
-    return {updateComponent:update}
+    return {forceUpdate:update}
 }
 
 export default useUpdate
