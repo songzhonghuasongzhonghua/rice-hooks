@@ -1,13 +1,13 @@
-import useUpdate from './hooks/useUpdate';
+import useUpdate from './hooks/useUpdate'
 function App() {
-  const {updateComponent} = useUpdate()
-  console.log('update');
-  
+  const { forceUpdate } = useUpdate()
+  console.log('update')
+
   return (
     <div>
-     <button onClick={() => updateComponent()}>按钮</button>
+      <button onClick={() => forceUpdate()}>按钮</button>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
