@@ -1,3 +1,4 @@
+//深比较hook依赖
 export default function deepCompareForHooks(dep:any[]):any[] {
     if(!dep.length){
         return []
