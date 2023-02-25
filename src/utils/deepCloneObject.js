@@ -9,9 +9,6 @@ export default function deepCloneObject(object) {
             newObject[key] = typeof object[key] === 'object'? deepCloneObject(object[key]) :object[key]
         }
     }
-
     return newObject
 
-
-    
 }
